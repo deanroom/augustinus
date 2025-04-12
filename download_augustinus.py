@@ -2,51 +2,59 @@ import requests
 from bs4 import BeautifulSoup
 import os
 import time
-from urllib.parse import urlparse
+import re
 
 def extract_title(html_content):
     soup = BeautifulSoup(html_content, 'html.parser')
     title = soup.title.string if soup.title else "No Title"
     return title.strip()
 
-def process_urls(limit=None):
-    # 用于存储失败的URL
+def process_urls():
+    # For storing failed URLs
     failed_urls = []
     
-    # Read URLs from the file
-    with open('links2.txt', 'r') as file:
+    # Read URLs from links_failed.txt
+    with open('links_failed.txt', 'r') as file:
         base_urls = [line.strip() for line in file if line.strip()]
-    
-    # Limit to the first URL if requested
-    if limit:
-        base_urls = base_urls[:limit]
     
     for base_url in base_urls:
         try:
-            # Extract the base path and content name
-            parsed_url = urlparse(base_url)
-            path_parts = parsed_url.path.split('/')
-            content_name = path_parts[-2] if len(path_parts) >= 2 else ""
+            # Extract base part and numeric part from URL
+            # Example: https://www.augustinus.it/latino/commento_lsg/omelia_00_testo.htm
+            #          We'll get base_part = "https://www.augustinus.it/latino/commento_lsg/omelia_"
+            #          and suffix = "_testo.htm"
+            match = re.match(r'(.*?)(\d+)(.*?)$', base_url)
+            if not match:
+                print(f"Could not parse URL format: {base_url}")
+                failed_urls.append(base_url)
+                continue
+                
+            base_part = match.group(1)  # Everything before the number
+            initial_num = int(match.group(2))  # The number part
+            suffix = match.group(3)  # Everything after the number
             
-            # Base URL without 'index.htm'
-            base_path = f"{parsed_url.scheme}://{parsed_url.netloc}{'/'.join(path_parts[:-1])}/"
+            # Extract content name from URL for filename
+            # Example: from "commento_lsg/omelia_00_testo.htm" we want "commento_lsg"
+            path_parts = base_url.split('/')
+            content_name = path_parts[-2] if len(path_parts) >= 2 else "content"
             
-            # Create output filename based on content name
+            # Output filename
             output_filename = f"{content_name}.txt"
             
             combined_content = ""
-            page_number = 0
+            current_num = initial_num
             found_pages = False
             
             print(f"Processing {base_url}...")
             
             # Process pages until a 404 is encountered
             while True:
-                # 使用两位数格式的页码 (01, 02, 03...)
-                formatted_number = f"{page_number:02d}"
+                # Format the number based on the initial format (same number of digits)
+                num_digits = len(match.group(2))
+                formatted_num = f"{current_num:0{num_digits}d}"
                 
-                # 所有页面都使用 _testo.htm 后缀，页码格式为两位数
-                url = f"{base_path}{content_name}_{formatted_number}_testo.htm"
+                # Construct the URL with the incremented number
+                url = f"{base_part}{formatted_num}{suffix}"
                 
                 print(f"Trying URL: {url}")
                 
@@ -54,16 +62,7 @@ def process_urls(limit=None):
                     response = requests.get(url)
                     if response.status_code != 200:
                         print(f"Page not found: {url}")
-                        # 尝试替代URL格式
-                        if page_number > 1:
-                            alt_url = f"{base_path}{content_name}_{formatted_number}.htm"
-                            print(f"Trying alternative URL: {alt_url}")
-                            response = requests.get(alt_url)
-                            if response.status_code != 200:
-                                break
-                            url = alt_url
-                        else:
-                            break
+                        break
                     
                     found_pages = True
                     html_content = response.text
@@ -72,20 +71,22 @@ def process_urls(limit=None):
                     # Parse content
                     soup = BeautifulSoup(html_content, 'html.parser')
                     
-                    # Extract text content (modify as needed based on actual page structure)
+                    # Extract text content
                     body_content = soup.body.get_text(separator='\n', strip=True)
                     
-                    # 检查是否包含框架错误信息
+                    # Check for frame content
                     if "La pagina corrente utilizza i frame" in body_content:
                         print(f"Detected frame content, trying to get actual content...")
-                        # 查找框架源URL
+                        # Look for frame source URL
                         frame_src = None
                         frames = soup.find_all('frame')
                         for frame in frames:
                             if 'src' in frame.attrs:
                                 frame_src = frame['src']
+                                # If relative URL, make it absolute
                                 if not frame_src.startswith('http'):
-                                    frame_src = f"{parsed_url.scheme}://{parsed_url.netloc}{frame_src if frame_src.startswith('/') else '/' + frame_src}"
+                                    base_domain = re.match(r'(https?://[^/]+)', base_url).group(1)
+                                    frame_src = f"{base_domain}{frame_src if frame_src.startswith('/') else '/' + frame_src}"
                                 break
                         
                         if frame_src:
@@ -107,8 +108,8 @@ def process_urls(limit=None):
                     print(f"Error processing {url}: {e}")
                     break
                 
-                # Increment page number for next iteration
-                page_number += 1
+                # Increment number for next iteration
+                current_num += 1
                 
                 # Add a small delay to avoid overloading the server
                 time.sleep(1)
@@ -126,15 +127,14 @@ def process_urls(limit=None):
             print(f"Failed to process {base_url}: {e}")
             failed_urls.append(base_url)
     
-    # 保存失败的URL到links3.txt
+    # Save failed URLs to links_failed_new.txt
     if failed_urls:
-        with open('links3.txt', 'w') as file:
+        with open('links_failed_new.txt', 'w') as file:
             for url in failed_urls:
                 file.write(f"{url}\n")
-        print(f"Saved {len(failed_urls)} failed URLs to links3.txt")
+        print(f"Saved {len(failed_urls)} failed URLs to links_failed_new.txt")
     else:
         print("All URLs were processed successfully!")
 
 if __name__ == "__main__":
-    # Process all URLs
     process_urls() 

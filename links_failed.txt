@@ -1,9 +1,3 @@
-https://www.augustinus.it/latino/commento_lsg/omelia_00_testo.htm
-https://www.augustinus.it/latino/commento_vsg/omelia_001_testo.htm
-https://www.augustinus.it/latino/confessioni/conf_01_libro.htm
-https://www.augustinus.it/latino/contr_acc/contr_acc_1_testo.htm
-https://www.augustinus.it/latino/contro_fausto/libro_01_testo.htm
-https://www.augustinus.it/latino/contro_lettere_pelagiani/contro_pelagiani_1_libro.htm
 https://www.augustinus.it/latino/discorsi/discorso_001_testo.htm
 https://www.augustinus.it/latino/esposizioni_salmi/esposizione_salmo_001_testo.htm
 https://www.augustinus.it/latino/genesi_lettera/genesi_lettera_01_libro.htm
