@@ -1,0 +1,128 @@
+---
+description: 
+globs: 
+alwaysApply: false
+---
+
+# Augustinus Project: Comprehensive Philosophical Writing Rules
+
+## Rule 0: Strictness on Sources and Text Analysis
+
+When investigating, reading, and analyzing philosophical texts, apply these principles:
+
+### 0.1 Ensure Every Word is Sound
+*   **Strictly use the provided resources:** Base all analysis only on the primary and secondary literature explicitly provided by the user. Do not reference external databases or sources not included in the provided materials.
+*   **Make summary with evidence:** All summaries and conclusions must be supported by related passages in the text, with relevant quotations included in the answer. For philosophical positions (e.g., Augustine's views), prioritize direct quotations from primary sources rather than secondary commentary.
+*   **Quotation in standard form:** List sources in the format (author name, book name, pages or chapter number) immediately following each quotation.
+*   **Intellectual honesty:** Do not provide conclusions or views without textual evidence. When information cannot be found in the provided sources, explicitly acknowledge this limitation rather than making unsupported claims.
+
+## Rule 1: Thesis Clarity and Precision
+
+### 1.1 State a Thesis, Not Just a Topic
+The core aim is to defend a **thesis**, which must be a specific claim formulatable in a declarative sentence (e.g., "Hume's skepticism about induction is unwarranted"). It cannot be just a broad topic area (e.g., "Hume on induction").
+
+### 1.2 Be Focused and Precise
+*   **Focus:** The thesis must be narrow enough to be adequately defended within the available space (e.g., a specific chapter section, not the entire proposal). Avoid overly broad claims (e.g., "Time is an illusion").
+*   **Precision:** The thesis must be stated precisely enough so that it's clear what counts as evidence *for* it and what would count as a *refutation* of it. Avoid vague terms or clearly define them if necessary (e.g., specify what "common sense" entails if arguing Hume conflicts with it).
+
+### 1.3 Position Thesis Clearly in Introduction
+The thesis statement should be explicitly stated, usually towards the end of the introduction. Use clear signposting language like:
+*   "In this section/paper, I will argue that..."
+*   "My central claim is that..."
+*   "What I will try to show is that..."
+
+### 1.4 Defend the Thesis
+Remember that the purpose is not just to state the thesis (or opinion) but to **defend it** by providing reasons and arguments throughout the text.
+
+## Rule 2: Structuring Philosophical Introductions
+
+Every introduction must accomplish three key tasks concisely:
+
+### 2.1 Motivate the Project
+*   Explain *why* the thesis or topic matters. Make the reader care about whether the thesis is true.
+*   Connect the specific thesis to broader philosophical concerns or debates if necessary.
+*   Address the question: "Why is this discussion important or interesting?"
+
+### 2.2 Provide Essential Background
+*   Define any technical terms used in the thesis statement that the target audience (intelligent non-expert) might not know.
+*   Briefly outline the context or debate into which the thesis fits.
+*   Ensure the reader understands *what the thesis means* before you start arguing for it.
+
+### 2.3 State the Thesis Clearly
+*   Explicitly state the focused, precise thesis you will defend (as per the 'Thesis Clarity and Precision' rule).
+*   Use clear signposting language (e.g., "I will argue that...", "My aim here is to show that...").
+*   Optionally, briefly outline the structure of the argument or paper/section that follows.
+
+**Note:** Introductions should be relatively short and written clearly. It's often best to draft the introduction *after* drafting the main body of the argument.
+
+## Rule 3: Analyzing and Evaluating Arguments
+
+When discussing another philosopher's argument (e.g., in a literature review or critique):
+
+### 3.1 Explain Clearly (Explanation Part)
+*   **Identify the Thesis:** State precisely the conclusion the original author is arguing for.
+*   **Identify the Premises:** List the key claims the author uses as starting points or reasons.
+*   **Identify the Argument Type:** Determine the kind of support the premises are *intended* to lend the conclusion (e.g., deductive validity, inference to the best explanation, analogical).
+
+### 3.2 Evaluate Critically (Evaluation Part - Your Contribution)
+This is where your own thesis regarding the other philosopher's work comes in. State your evaluation clearly. Examples:
+*   **Disagree with Premises:** Argue that one or more premises are false or unsupported. Consider if revised premises could save the argument.
+*   **Challenge the Inference:** Argue that the premises, even if true, do *not* adequately support the conclusion according to the intended argument type (e.g., show a deductive argument is invalid, or an inference to the best explanation has better alternatives). Consider if the argument could be reformulated more successfully (e.g., as a different argument type).
+*   **Agree with Thesis, Faulty Argument:** Agree with the original conclusion but argue the provided argument is flawed. Suggest alternative premises or reasoning.
+*   **Defend Against Criticism:** If defending the original argument, address specific criticisms raised by others.
+
+### 3.3 Distinguish from Pure Exegesis
+While understanding the author's meaning (exegesis) is necessary, the primary goal here is *logical analysis and evaluation* of the argument's structure and soundness/cogency. Frame the explanation using your understanding of the relevant philosophical issues.
+
+## Rule 4: Audience Awareness and Clarity
+
+Assume the reader is intelligent but **not** an expert in your specific philosophical topic, nor necessarily well-versed in philosophy generally. They are interested but impatient and easily bored, requiring clear motivation and guidance.
+
+### 4.1 Ensure Ready Intelligibility
+*   **Know Your Point:** For every sentence, know exactly what claim, clarification, or transition it makes.
+*   **Clarity of Expression:** Use clear, direct language. Avoid unnecessary jargon. Define technical terms explicitly when first used.
+*   **Motivation:** Ensure the reader always understands *why* a particular point is being made *at that specific place* in the text. Avoid abrupt shifts. Use transition phrases.
+*   **Background:** Provide necessary context for claims, arguments, or positions discussed. Do not assume shared knowledge from specific texts or courses.
+*   **Elaboration:** Use examples and illustrations to clarify abstract points.
+
+### 4.2 Do Not Write For Yourself or Your Instructor
+*   Avoid explaining concepts solely based on the way *you* came to understand them. Present the idea logically and provide the necessary background for a general reader.
+*   Do not assume the reader (even your instructor) shares your immediate background, readings, or specific course context. Write to communicate your understanding and argument effectively to an external intelligent reader.
+
+### 4.3 Explicit Connections
+Explicitly state connections between ideas, premises, and conclusions. Do not rely on the reader to make subtle inferences or connections themselves. Guide the reader through your line of reasoning step-by-step.
+
+### 4.4 Professional Tone
+*   Maintain a formal, objective, and analytical tone suitable for a serious academic audience in philosophy/theology/classics. 
+*   Avoid colloquialisms, overly simplistic language, and generic explanatory styles.
+*   Use precise terminology appropriate to the field while still ensuring clarity for the non-specialist reader.
+
+## Rule 5: General Philosophical Writing Standards
+
+The following principles apply to all philosophical writing in this project:
+
+### 5.1 Academic Rigor
+*   **Evidence-Based Claims:** Every substantive claim must be supported by textual evidence or argument.
+*   **Charitable Reading:** Present others' views in their strongest form before critiquing them.
+*   **Intellectual Honesty:** Acknowledge limitations in your argument and address potential objections.
+*   **Precision:** Use language with technical precision; define terms when introducing them.
+
+### 5.2 Logical Structure
+*   **Clear Argumentation:** Arguments should have identifiable premises and conclusions.
+*   **Progressive Development:** Each paragraph and section should build logically upon previous ones.
+*   **Coherent Organization:** The overall structure should be coherent and purposeful, not merely a collection of related points.
+
+### 5.3 Scholarly Standards
+*   **Proper Citation:** All references to other works must be properly cited.
+*   **Engagement with Literature:** Demonstrate familiarity with relevant scholarly literature.
+*   **Original Contribution:** Make clear how your work contributes to the existing philosophical conversation.
+
+### 5.4 Stylistic Elements
+*   **Economy of Expression:** Be concise and avoid unnecessary repetition or verbosity.
+*   **Clarity over Complexity:** Express complex ideas as clearly as possible without oversimplification.
+*   **Academic Register:** Maintain a formal, scholarly tone throughout all writing.
+
+### 5.5 Philosophical Methodology
+*   **Critical Analysis:** Question assumptions, examine implications, and evaluate arguments.
+*   **Conceptual Clarity:** Distinguish related concepts and avoid equivocation.
+*   **Principle of Charity:** Interpret texts and arguments in their strongest, most coherent form. 

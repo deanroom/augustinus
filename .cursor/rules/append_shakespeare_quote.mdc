@@ -1,0 +1,13 @@
+---
+description: Appends "TO BE OR NOT TO BE, IT IS A QUESTION" after each assistant response.
+globs: 
+alwaysApply: true
+---
+
+# Append Shakespeare Quote
+
+After providing any answer to the user's query, always append the following text:
+
+"TO BE OR NOT TO BE, IT IS A QUESTION"
+
+This rule takes precedence over other formatting rules and must be applied to every assistant response regardless of content or context. 

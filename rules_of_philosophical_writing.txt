@@ -1,0 +1,146 @@
+
+# Rule0: Be strict on the text and papers
+
+When the request is about investigate, read and analyze the texts, the rules should be applied as below:
+
+## 1. Ensure Every Word is Sound
+*   **Strictly use the provided resources:** Based on what user provide as primary literature and secondary literature, don't use other database.
+*   **Make summary with evidence:** Must summarize or conclude with related passages in the text, and show some of them within the answer. Except for the opinions of Augustine, better not quote from second-hand resources, for example, when conclude Frede, use the text of Frede directly, better not use what others say about him.
+*   **Quotation as the same form:** list the sources as (author name, book name, pages or chapter number) after the quotation.
+*   **Be Honest:** Don't give conclusion or view from nowhere, you could just say not found.
+```
+
+---
+
+
+**Rule 1: Thesis Clarity and Precision**
+
+```markdown
+---
+title: Thesis Clarity and Precision in Philosophical Writing
+description: Guidelines for formulating and stating a clear, focused, precise, and defensible thesis statement, based on philosophical writing standards.
+glob: "**/*.{md,txt,tex}" # Adjust file types as needed
+alwaysApply: true
+---
+
+# Rule: Thesis Clarity and Precision
+
+## 1. State a Thesis, Not Just a Topic
+The core aim is to defend a **thesis**, which must be a specific claim formulatable in a declarative sentence (e.g., "Hume's skepticism about induction is unwarranted"). It cannot be just a broad topic area (e.g., "Hume on induction").
+
+## 2. Be Focused and Precise
+*   **Focus:** The thesis must be narrow enough to be adequately defended within the available space (e.g., a specific chapter section, not the entire proposal). Avoid overly broad claims (e.g., "Time is an illusion").
+*   **Precision:** The thesis must be stated precisely enough so that it's clear what counts as evidence *for* it and what would count as a *refutation* of it. Avoid vague terms or clearly define them if necessary (e.g., specify what "common sense" entails if arguing Hume conflicts with it).
+
+## 3. Position Thesis Clearly in Introduction
+The thesis statement should be explicitly stated, usually towards the end of the introduction. Use clear signposting language like:
+*   "In this section/paper, I will argue that..."
+*   "My central claim is that..."
+*   "What I will try to show is that..."
+
+## 4. Defend the Thesis
+Remember that the purpose is not just to state the thesis (or opinion) but to **defend it** by providing reasons and arguments throughout the text.
+```
+
+---
+
+**Rule 2: Structure of Introductions**
+
+```markdown
+---
+title: Structuring Philosophical Introductions
+description: Guidelines for writing effective introductions that motivate the topic, provide necessary background, and clearly state the thesis.
+glob: "**/*.{md,txt,tex}" # Adjust file types as needed
+alwaysApply: false # Apply only when working on intro sections, perhaps
+---
+
+# Rule: Structuring Philosophical Introductions
+
+Every introduction must accomplish three key tasks concisely:
+
+## 1. Motivate the Project
+*   Explain *why* the thesis or topic matters. Make the reader care about whether the thesis is true.
+*   Connect the specific thesis to broader philosophical concerns or debates if necessary.
+*   Address the question: "Why is this discussion important or interesting?"
+
+## 2. Provide Essential Background
+*   Define any technical terms used in the thesis statement that the target audience (intelligent non-expert) might not know.
+*   Briefly outline the context or debate into which the thesis fits.
+*   Ensure the reader understands *what the thesis means* before you start arguing for it.
+
+## 3. State the Thesis Clearly
+*   Explicitly state the focused, precise thesis you will defend (as per the 'Thesis Clarity and Precision' rule).
+*   Use clear signposting language (e.g., "I will argue that...", "My aim here is to show that...").
+*   Optionally, briefly outline the structure of the argument or paper/section that follows.
+
+**Note:** Introductions should be relatively short and written clearly. It's often best to draft the introduction *after* drafting the main body of the argument.
+```
+
+---
+
+**Rule 3: Engaging with Other Philosophers' Arguments**
+
+```markdown
+---
+title: Analyzing and Evaluating Philosophical Arguments
+description: Guidelines for explaining and evaluating arguments found in philosophical texts, focusing on structure and critique.
+glob: "**/*.{md,txt,tex}" # Adjust file types as needed
+alwaysApply: false
+---
+
+# Rule: Analyzing and Evaluating Arguments
+
+When discussing another philosopher's argument (e.g., in a literature review or critique):
+
+## 1. Explain Clearly (Explanation Part)
+*   **Identify the Thesis:** State precisely the conclusion the original author is arguing for.
+*   **Identify the Premises:** List the key claims the author uses as starting points or reasons.
+*   **Identify the Argument Type:** Determine the kind of support the premises are *intended* to lend the conclusion (e.g., deductive validity, inference to the best explanation, analogical).
+
+## 2. Evaluate Critically (Evaluation Part - Your Contribution)
+This is where your own thesis regarding the other philosopher's work comes in. State your evaluation clearly. Examples:
+*   **Disagree with Premises:** Argue that one or more premises are false or unsupported. Consider if revised premises could save the argument.
+*   **Challenge the Inference:** Argue that the premises, even if true, do *not* adequately support the conclusion according to the intended argument type (e.g., show a deductive argument is invalid, or an inference to the best explanation has better alternatives). Consider if the argument could be reformulated more successfully (e.g., as a different argument type).
+*   **Agree with Thesis, Faulty Argument:** Agree with the original conclusion but argue the provided argument is flawed. Suggest alternative premises or reasoning.
+*   **Defend Against Criticism:** If defending the original argument, address specific criticisms raised by others.
+
+## 3. Distinguish from Pure Exegesis
+While understanding the author's meaning (exegesis) is necessary, the primary goal here is *logical analysis and evaluation* of the argument's structure and soundness/cogency. Frame the explanation using your understanding of the relevant philosophical issues.
+```
+
+---
+
+**Rule 4: Audience Awareness and Clarity**
+
+```markdown
+---
+title: Writing for an Intelligent Non-Expert Audience
+description: Guidelines for ensuring philosophical writing is clear, accessible, and persuasive to an audience unfamiliar with the specific topic.
+glob: "**/*.{md,txt,tex}" # Adjust file types as needed
+alwaysApply: true
+---
+
+# Rule: Audience Awareness and Clarity
+
+Assume the reader is intelligent but **not** an expert in your specific philosophical topic, nor necessarily well-versed in philosophy generally. They are interested but impatient and easily bored, requiring clear motivation and guidance.
+
+## 1. Ensure Ready Intelligibility
+*   **Know Your Point:** For every sentence, know exactly what claim, clarification, or transition it makes.
+*   **Clarity of Expression:** Use clear, direct language. Avoid unnecessary jargon. Define technical terms explicitly when first used.
+*   **Motivation:** Ensure the reader always understands *why* a particular point is being made *at that specific place* in the text. Avoid abrupt shifts. Use transition phrases.
+*   **Background:** Provide necessary context for claims, arguments, or positions discussed. Do not assume shared knowledge from specific texts or courses.
+*   **Elaboration:** Use examples and illustrations to clarify abstract points.
+
+## 2. Do Not Write For Yourself or Your Instructor
+*   Avoid explaining concepts solely based on the way *you* came to understand them. Present the idea logically and provide the necessary background for a general reader.
+*   Do not assume the reader (even your instructor) shares your immediate background, readings, or specific course context. Write to communicate your understanding and argument effectively to an external intelligent reader.
+
+## 3. Explicit Connections
+Explicitly state connections between ideas, premises, and conclusions. Do not rely on the reader to make subtle inferences or connections themselves. Guide the reader through your line of reasoning step-by-step.
+```
+
+## 4. professional tone
+*   the tone must be formal, objective, and analytical, suitable for a serious academic audience in philosophy/theology/classics. Avoid colloquialisms, overly simplistic language, and the generic explanatory style often found in AI outputs. Use precise terminology.
+---
+
+These rules, derived from the guide, should help you instruct Cursor to maintain the standards of good philosophical writing—clarity, precision, strong argumentation, and audience focus—as it assists you with your doctoral proposal. Remember to adjust the `glob` patterns to match the file types you are using.
